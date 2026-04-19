@@ -4,29 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATERIA Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #0f0d0a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-color: #fff;
+            color: #0f0d0a;
+            cursor: pointer;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to MATERIA</h1>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="features">
-        <h2>Features</h2>
-        <p>Discover the amazing features of MATERIA.</p>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>MATERIA is a leading platform...</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 MATERIA. All rights reserved.</p>
-    </footer>
+    <h1>MATERIA Landing Page</h1>
+    <div class="form-container">
+        <form action="https://formspree.io/f/mgorzwgw" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </div>
 </body>
 </html>
